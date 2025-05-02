@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lucky Draw Result</title>
+  <link rel="stylesheet" href="stryle.css">
+  <style>
+     </style>
+</head>
+<body>
+
+  <!-- Background video -->
+  <video class="video-background" autoplay muted loop playsinline>
+    <source src="Motion effect.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Initial screen -->
+  <h1 id="message">Waiting for result...</h1>
+  <button id="startBtn">Show Result</button>
+  <div class="countdown" id="countdown"></div>
+
+  <!-- Grand winner screen -->
+  <div class="grand-winner-screen" id="grandWinnerScreen">
+    <div class="fireworks-background"><canvas id="grandCanvas"></canvas></div>
+    <div class="winner-content">
+      <h2 class="draw-title">GRAND LUCKY DRAW – 3 WINNER</h2>
+      <div class="ticket-number">1635</div>
+      <h1 class="congrats-title">🎉 CONGRATULATIONS! 🎉</h1>
+      <ul class="winner-names-list">
+        <li style="animation-delay: 10s;">Shreya</li>
+        <li style="animation-delay: 10s;">Arohi</li>
+        <li style="animation-delay: 10s;">Aditi</li>
+      </ul>
+      <div class="prize-text">🎁 YOU HAVE WON A <br> XIAOMI VACUUM CLEANER G20</div>
+    </div>
+  </div>
+
+  <!-- Audio -->
+  <audio id="fireSound" src="fireworks-29629.mp3" preload="auto"></audio>
+  <audio id="cheerSound" src="crowd-cheering-sound-effect-258730.mp3" preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
